@@ -1,6 +1,6 @@
 # Java Style Guide
 
-## Nobody Team Endorsed
+## Endorsed By Nobody
 So far, nobody has reviewed or contributed feeback, thus this style guide is my own. 
 
 ## Purpose
