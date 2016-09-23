@@ -59,12 +59,12 @@ Test your code.  Automate those tests.  [Just do it](https://giphy.com/gifs/shia
 ## If-Else Statements
 If-Else statements should always span multiple lines.  What I mean is that your conditional statement should not be on the same line as your execute statement.  Instead, put the body of your *If* indented on the next line. 
 ``` 
-// Wrong code
+// Bad 
 if(bool == false) bool = true;
 ``` 
 
 ``` 
-// Better code
+// Better 
 if(bool == false)
     bool = true;
 ``` 
