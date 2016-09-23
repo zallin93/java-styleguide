@@ -27,6 +27,7 @@ At some point in the future, I may add a sample application to this repository t
  1. [Comments](#comments)
  1. [Testing](#testing)
  1. [If-Else Statements](#if-else-statements)
+ 1. [Methods](#methods)
 
 
 ## General Style
@@ -68,3 +69,27 @@ if(bool == false) bool = true;
 if(bool == false)
     bool = true;
 ``` 
+
+
+## Methods 
+### Naming
+Method names should be descriptive.  Nothing more should have to be said.  
+
+While descriptive comments should always proceed a method, another developer should be able to reasonably determine what the method does.  This especially includes private helper methods.  The following methods are all supposed to do the same thing: return the value of a private variable called firstLove.
+``` 
+// Bad
+public Love neverForgetLove();
+``` 
+``` 
+// Better
+public Love gimmeThatLove();
+```
+``` 
+// Good
+public Love getFirstLove();
+``` 
+The first example is piss poor.  I have no idea what it is supposed to do.  I know that it returns a *Love* object, but that's all that I can really gather without comments or the full source. 
+
+Our second example is a bit better.  I know that I am returning a *Love* object, but I don't know which one.  "ThatLove" isn't very descriptive. 
+
+The third example is perfect.  It's short, sweet, and very descriptive.  I know that I am returning a *Love* object, the "get" in the method name confirms this, and I know that the variable name from that class will be *firstLove*.  
