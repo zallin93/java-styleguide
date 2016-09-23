@@ -31,7 +31,7 @@ At some point in the future, I may add a sample application to this repository t
 When reading through an application's source code, I should not be able to tell how many developers have contributed.  Sometimes *@author* tags or the sheer size of an application might give this away, but by only reading the code, I should be ignorant.  The code base should be cohesive and make sense.  If it doesn't, you know what to do.  Refactor.  Refactor.  Refactor.  
 
 ## Naming Conventions
-As originally a C developer, I am partial to **skeleton_casing**.  Using underscores makes quick reading and differentiating between similar class/method/variable names very easy.  Issues may arise when relying on 3rd-party libraries for automatic processing of your code.  
+Educated as a C developer, I am partial to **skeleton_casing**.  Using underscores makes quick reading and differentiating between similar class/method/variable names very easy.  Issues may arise when relying on 3rd-party libraries for automatic processing of your code.  
 
 The original Java standard is to use **camelCasing**.  
 
