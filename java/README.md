@@ -22,8 +22,31 @@ At some point in the future, I may add a sample application to this repository t
 
 ## Table of Contents
 
+ 1. [General Style](#general-style)
+ 1. [Naming Conventions](#naming-conventions)
  1. [Comments](#comments)
+ 1. [Testing](#testing)
+
+## General Style
+When reading through an application's source code, I should not be able to tell how many developers have contributed.  Sometimes *@author* tags or the sheer size of an application might give this away, but by only reading the code, I should be ignorant.  The code base should be cohesive and make sense.  If it doesn't, you know what to do.  Refactor.  Refactor.  Refactor.  
+
+## Naming Conventions
+As originally a C developer, I am partial to **skeleton_casing**.  Using underscores makes quick reading and differentiating between similar class/method/variable names very easy.  Issues may arise when relying on 3rd-party libraries for automatic processing of your code.  
+
+The original Java standard is to use **camelCasing**.  
+
+The most important thing is to remain consistent.  Consistency should extend beyond a single method or class; your entire application should use consistent naming conventions.  
+
 
 ## Comments
-Comments are the most useful text in any applications.  Without them, no one would understand your spaghetti code you wrote when you were drinking last night.  
-Even when I find myself 4 PBR's deep, if I have comments in my code, I am able to figure out what my code is doing relatively-easily. 
+Comments are the most useful text in any application.  Without them, no one would understand the spaghetti code you wrote when you were drinking last night. 
+
+Even when I find myself 4 PBR's deep, I am able to relatively easily figure out what my code is doing if I have comments in my code. 
+
+## Testing
+Junit tests should be written for nearly all of your classes.  Your application is not a special snowflake; write the damn tests.  
+
+Some situations may not call for Junit tests to be written.  One such case, might be if you are building a web service application.  In this case, you should instead be writing integration tests.  
+
+Test your code.  Automate those tests.  [Just do it](https://giphy.com/gifs/shia-labeouf-just-do-it-wErJXg1tIgHXG).
+
