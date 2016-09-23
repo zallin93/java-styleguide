@@ -26,9 +26,14 @@ At some point in the future, I may add a sample application to this repository t
  1. [Naming Conventions](#naming-conventions)
  1. [Comments](#comments)
  1. [Testing](#testing)
+ 1. [If-Else Statements](#if-else-statements)
+
 
 ## General Style
-When reading through an application's source code, I should not be able to tell how many developers have contributed.  Sometimes *@author* tags or the sheer size of an application might give this away, but by only reading the code, I should be ignorant.  The code base should be cohesive and make sense.  If it doesn't, you know what to do.  Refactor.  Refactor.  Refactor.  
+When reading through an application's source code, I should not be able to tell how many developers have contributed.  Sometimes *@author* tags or the sheer size of an application might give this away, but by only reading the code, I should be ignorant.  The code base should be cohesive and make sense.  If it doesn't, you know what to do.  
+
+Refactor.  Refactor.  Refactor.  
+
 
 ## Naming Conventions
 Educated as a C developer, I am partial to **skeleton_casing**.  Using underscores makes quick reading and differentiating between similar class/method/variable names very easy.  Issues may arise when relying on 3rd-party libraries for automatic processing of your code.  
@@ -50,3 +55,16 @@ Some situations may not call for Junit tests to be written.  One such case, migh
 
 Test your code.  Automate those tests.  [Just do it](https://giphy.com/gifs/shia-labeouf-just-do-it-wErJXg1tIgHXG).
 
+
+## If-Else Statements
+If-Else statements should always span multiple lines.  What I mean is that your conditional statement should not be on the same line as your execute statement.  Instead, put the body of your *If* indented on the next line. 
+``` 
+// Wrong code
+if(bool == false) bool = true;
+``` 
+
+``` 
+// Better code
+if(bool == false)
+    bool = true;
+``` 
