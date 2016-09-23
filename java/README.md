@@ -88,8 +88,8 @@ public Love gimmeThatLove();
 // Good
 public Love getFirstLove();
 ``` 
-The first example is piss poor.  I have no idea what it is supposed to do.  I know that it returns a *Love* object, but that's all that I can really gather without comments or the full source. 
+The first example is piss poor.  I have no idea what it is supposed to do.  I know that it returns a *Love* object, but that's all that I can really gather without comments or the full source.  :hankey:
 
-Our second example is a bit better.  I know that I am returning a *Love* object, but I don't know which one.  "ThatLove" isn't very descriptive. 
+Our second example is a bit better.  I know that I am returning a *Love* object, but I don't know which one.  "ThatLove" isn't very descriptive.  :hankey:
 
-The third example is perfect.  It's short, sweet, and very descriptive.  I know that I am returning a *Love* object, the "get" in the method name confirms this, and I know that the variable name from that class will be *firstLove*.  
+The third example is perfect.  It's short, sweet, and very descriptive.  I know that I am returning a *Love* object, the "get" in the method name confirms this, and I know that the variable name from that class will be *firstLove*.  :fire:
