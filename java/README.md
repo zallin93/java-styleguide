@@ -35,6 +35,8 @@ When reading through an application's source code, I should not be able to tell 
 
 Refactor.  Refactor.  Refactor.  
 
+Readability is the greatest tool that every developer undervalues.  Yes, your code makes sense to you today.  But three weeks from now, I'll bet my 401K savings that you have no idea what 70% of your code is doing, nor its purpose.  
+
 
 ## Naming Conventions
 Educated as a C developer, I am partial to **skeleton_casing**.  Using underscores makes quick reading and differentiating between similar class/method/variable names very easy.  Issues may arise when relying on 3rd-party libraries for automatic processing of your code.  
@@ -48,6 +50,7 @@ The most important thing is to remain consistent.  Consistency should extend bey
 Comments are the most useful text in any application.  Without them, no one would understand the spaghetti code you wrote when you were drinking last night. 
 
 Even when I find myself 4 PBR's deep, I am able to relatively easily figure out what my code is doing if I have comments in my code. 
+
 
 ## Testing
 Junit tests should be written for nearly all of your classes.  Your application is not a special snowflake; write the damn tests.  
@@ -69,6 +72,9 @@ if(bool == false) bool = true;
 if(bool == false)
     bool = true;
 ``` 
+
+### Curly Braces
+This is a tough one.  My personal preference is to always place curly braces on the next line.  However, it is acceptable to put the opening brace on the same line as *if(condition)*, provided the closing brace lines up correctly with the *If*.  Whichever method you choose, remain consistent throughout your application, or at least throughout a single file, at the minimum.  
 
 
 ## Methods 
