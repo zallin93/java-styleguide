@@ -28,6 +28,7 @@ At some point in the future, I may add a sample application to this repository t
  1. [Testing](#testing)
  1. [If-Else Statements](#if-else-statements)
  1. [Methods](#methods)
+ 1. [Imports](#imports)
 
 
 ## General Style
@@ -99,3 +100,19 @@ The first example is piss poor.  I have no idea what it is supposed to do.  I kn
 Our second example is a bit better.  I know that I am returning a *Love* object, but I don't know which one.  "ThatLove" isn't very descriptive.  :hankey:
 
 The third example is perfect.  It's short, sweet, and very descriptive.  I know that I am returning a *Love* object, the "get" in the method name confirms this, and I know that the variable name from that class will be *firstLove*.  :fire:
+
+
+## Imports
+Usually, I try to organize my imports by their source packages.  For example, all 3rd party imports are clustered, and all local package imports are clustered together.  Within each of these two, I also try to group by the source package.  Example below: 
+```
+import java.util.List;
+import java.util.ArrayList;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.business.dept.model.Shirt;
+import com.business.dept.service.ShirtService;
+```
+
+
