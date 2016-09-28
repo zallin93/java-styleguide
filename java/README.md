@@ -48,9 +48,20 @@ The most important thing is to remain consistent.  Consistency should extend bey
 
 
 ## Comments
+### General
 Comments are the most useful text in any application.  Without them, no one would understand the spaghetti code you wrote when you were drinking last night. 
 
 Even when I find myself 4 PBR's deep, I am able to relatively easily figure out what my code is doing if I have comments in my code. 
+
+### Author Tags
+Credit should be given where credit is due.  When writing your original code, it is generally a good idea to mark yourself at the top of the file with an *@author* tag.  It's not that we are trying to be smug about how much of the code base we are responsible for.  Rather, it is letting other devs know, "Hey, Zach Allin wrote this code.  If you have questions, I'm probably one of the first resources you have available.  After you RTFM."  
+
+#### Respecting Author Tags
+Again, credit should be given where credit is due.  If you are working on an existing codebase (which you probably are), previous developers have likely marked their territory with *@author* tags.  Be a decent dude (or dudette), and leave their original tags, especially if a decent portion of the previous code base remains after you are done adding your feature, or fixing a reported bug.  
+
+None of us enjoys explaining to management why it took 3 days to read through and understand the code instead of asking a 30 second question to the previous senior dev, whose *@author* tag was removed 50 commits ago.  
+
+It's also nice to be able to shift the blame to the previous incompetent dev team when shit hits the fan.  
 
 
 ## Testing
@@ -105,6 +116,16 @@ The third example is perfect.  It's short, sweet, and very descriptive.  I know 
 ## Imports
 Usually, I try to organize my imports by their source packages.  For example, all 3rd party imports are clustered, and all local package imports are clustered together.  Within each of these two, I also try to group by the source package.  Example below: 
 ```
+// Bad
+import java.util.List;
+import org.slf4j.LoggerFactory;
+import com.business.dept.service.ShirtService;
+import java.util.ArrayList;
+import com.business.dept.model.Shirt;
+import org.slf4j.Logger;
+```
+```
+// Better
 import java.util.List;
 import java.util.ArrayList;
 
